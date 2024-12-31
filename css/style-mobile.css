@@ -1,0 +1,473 @@
+/* Ukuran Mobile */
+@media screen and (max-width: 576px) {
+
+    body {
+        overflow: auto;
+        scrollbar-width: none;
+        height: 100vh;
+        background: url(../assets/img/bg1.jpg); /* Sumber : https://downloadscdn6.freepik.com/23/2149305/2149304970.jpg?filename=background-gradient-lights.jpg&token=exp=1733892956~hmac=cb7ede37277b003ebe27092c83dcff02&filename=2149304970.jpg */
+        background-size: 140%;
+        font-family: "Outfit", sans-serif;
+        overflow-x: hidden;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 100%;
+        left: 0;
+        margin-left: 0;
+        width: 100%;
+        height: 17.7rem;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(0, 0, 0, .5);
+        backdrop-filter: blur(80px);
+        transform: translateY(-100%);
+        transition: .3s ease;
+        opacity: 0;
+    }
+
+    nav ul.slide {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* dashboard */
+    .dashboard {
+        position: relative;
+        margin-top: 20%;
+        height: 100vh;
+        margin-bottom: 10rem;
+    }
+
+    .title {
+        position: relative;
+        z-index: 1;
+        margin: 0;
+        text-align: left;
+        margin-left: 10%;
+        color: #999;
+        font-family: "Outfit", sans-serif;
+    }
+
+    .title h1 span {
+        color: white;
+    }
+
+    .title h1 {
+        font-size: 38px;
+    }
+
+    .social-links {
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+    }
+
+    .social-links i {
+        font-size: 30px;
+        color: white;
+        transition: transform 0.3s;
+    }
+
+    .image-container {
+        position: absolute;
+        height: auto;
+        z-index: 0;
+        width: 90%;
+        height: 90%;
+        margin-top: 21%;
+        margin-left: -15%;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .deskripsi {
+        position: relative;
+        z-index: 1;
+        margin: 0;
+        font-size: 10px;
+        text-align: left;
+        margin-top: 70%;
+        margin-left: 10%;
+        color: #fff;
+        font-family: "Outfit", sans-serif;
+    }
+
+    .title2 {
+        position: absolute;
+        bottom: -15%;
+        left: 10%;
+        text-align: center;
+    }
+
+    .title2 button {
+        background: rgba(0, 0, 0, .1);
+        backdrop-filter: blur(50px);
+        margin-bottom: 280px;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    /* Gallery */
+
+    .container {
+        position: absolute;
+        bottom: -373%;
+        left: 0;
+        width: 92%;
+        height: 350vh;
+        background-color: #eee;
+        border-radius: 30px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 1);
+        padding: 20px;
+        z-index: 3;
+    }
+
+    .container h1 {
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .card-container {
+        position: absolute;
+        margin-left: 10%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+        padding: 20px;
+        margin: 10px;
+        margin-bottom: 20px;
+        width: 300px;
+        transition: transform 0.3s;
+        text-align: center;
+    }
+
+    /* Detail */
+    .detail-content {
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        width: 80%;
+        height: 40%;
+        text-align: left;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    .detail-content button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 12px;
+        background-color: #FF3B30;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .detail-content .judul-detail {
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        color: #000;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .detail-content .content-wrapper {
+        display: flex;
+    }
+
+    .wrapper {
+        width: 50%;
+        margin: auto;
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+        margin-top: 0;
+    }
+
+    .navi a {
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        background-color: #dedede;
+        font-size: 0px;
+        border-radius: 50%;
+        margin: 3px;
+        transition: 1s;
+    }
+
+    .navi {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin-top: -32px;
+    }
+    
+    .detail-content .text-container {
+        width: 45%;
+        margin-top: -20px;
+        font-size: 12px;
+    }
+
+    .detail-content .text-container a {
+        display: inline-block;
+        background-color: #007BFF;
+        color: white;
+        margin-top: 35%;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+
+    /* experience */
+
+    .container2 {
+        position: absolute;
+        bottom: -430%;
+        left: 0;
+        width: 92%;
+        height: 180vh;
+        background-image: url(../assets/img/bg1.jpg); /* Sumber : https://downloadscdn6.freepik.com/23/2149305/2149304970.jpg?filename=background-gradient-lights.jpg&token=exp=1733892956~hmac=cb7ede37277b003ebe27092c83dcff02&filename=2149304970.jpg */
+        border-radius: 30px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 1);
+        padding: 20px;
+        z-index: 4;
+    }
+
+    .container2 h1 {
+        margin-bottom: 40px;
+        text-align: center;
+        color: white;
+        font-size: 40px;
+    }
+
+    .experience h2 {
+        font-size: 20px;
+        margin: 0;
+        color: white;
+    }
+
+    .description {
+        font-size: 12px;
+        color: #999;
+    }
+
+    /* About Me */
+
+    .container5 {
+        position: absolute;
+        bottom: -580%;
+        left: 0;
+        width: 92%;
+        height: 220vh;
+        background: #000;
+        backdrop-filter: blur(50px);
+        border-radius: 30px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 1);
+        padding: 20px;
+        z-index: 990;
+    }
+
+    .container5 h1 {
+        margin-bottom: 40px;
+        text-align: center;
+        color: white;
+        font-size: 40px;
+    }
+
+    .photo {
+        width: 160px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        margin-top: 15px;
+    }
+
+    .about-text {
+        flex: 3;
+        color: white;
+        text-align: justify;
+        font-size: 10px;
+    }
+
+    .about-text h2 {
+        font-size: 12px;
+    }
+
+    .education .year {
+        display: block;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 5px;
+    }
+
+    .education li {
+        margin-bottom: 20px;
+        color: white;
+        font-size: 12px;
+    }
+
+    .sub-skills li {
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+        font-size: 12px;
+    }
+
+    .skill-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        margin-left: -20px;
+    }
+
+    .skills,
+    .education {
+        flex:  1;
+        margin: 0 10px;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 15px;
+        border-radius: 10px;
+        color: white;
+        height: 10%;
+    }
+
+    h2,
+    h3 {
+        margin: 10px 0;
+        color: white;
+        font-size: 20px;
+    }
+
+    /* Contact */
+
+    .container3 {
+        position: absolute;
+        bottom: -617%;
+        left: 0;
+        width: 92%;
+        height: 120vh;
+        background: #eee;
+        backdrop-filter: blur(50px);
+        border-radius: 30px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 1);
+        padding: 20px;
+        z-index: 990;
+    }
+
+    .container3 h1 {
+        margin-bottom: 40px;
+        text-align: center;
+        color: black;
+        font-size: 40px;
+    }
+
+    .container3 .card {
+        background-color: white;
+        margin-top: -25%;
+        border-radius: 20px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 70%;
+        max-width: 500px;
+        text-align: center;
+    }
+
+    /* Gaya untuk modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background: rgba(0, 0, 0, .1);
+        backdrop-filter: blur(30px);
+    }
+
+    /* Footer */
+
+    .container4 {
+        position: absolute;
+        bottom: -617%;
+        left: 0;
+        width: 92%;
+        height: 20vh;
+        background: #000;
+        padding: 20px;
+        z-index: 990;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container4 footer {
+        display: block;
+        justify-content: center;
+    }
+
+    .container4 .name h2 {
+        font-size: 30px;
+        margin-top: 10px;
+        margin-left: 31%;
+        color: #eee;
+    }
+
+    .container4 .social-links {
+        display: flex;
+        margin-right: 19%;
+        gap: 25px;
+        position: absolute;
+        top: 70px;
+    }
+
+    .container4 .social-links i {
+        font-size: 2rem;
+        color: white;
+        transition: transform 0.3s;
+    }
+
+    .container4 .social-links i:hover {
+        transform: scale(1.2);
+    }
+
+    .container4 .copyright {
+        display: flex;
+        color: #eee;
+        justify-content: center;
+        margin-top: auto;
+    }
+}
